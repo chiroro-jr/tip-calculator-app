@@ -1,5 +1,6 @@
 import { state, updateState, resetState } from './model'
 
+const billInput = document.querySelector('.bill-input')
 const billEntryForm = document.querySelector('.bill-entry-form')
 const tipPercentRadioBtns = document.querySelectorAll(
     'input[name="tipPercent"]'
