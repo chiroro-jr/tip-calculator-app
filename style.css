@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number']::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: theme(colors.cyan.400);
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: theme(colors.cyan.600);
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: theme(colors.cyan.500);
+    }
+
+    form:has(#number-of-people:invalid) .error {
+        opacity: 100%;
+        visibility: visible;
+    }
+}
